@@ -11,7 +11,7 @@ yarn add pkmn-romaji
 import { fetchRomaji } from 'pkmn-romaji';
 
 const mon = await fetchRomaji({ mon: 'greninja' });
-console.log(mon.name);
+console.log(mon);
 /*
 {
   number: '658',
