@@ -1,0 +1,50 @@
+{
+  "name": "pkmn-romaji",
+  "version": "1.0.0",
+  "description": "Get romaji transliterations of Pokémon names and moves",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "npx tsc -p ./",
+    "postversion": "git push && git push --tags",
+    "prepack": "npx tsc -p ./"
+  },
+  "files": [
+    "dist/**/*",
+    "data/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castdrian/pkmn-romaji.git"
+  },
+  "keywords": [
+    "Pokémon",
+    "romaji"
+  ],
+  "author": "castdrian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/castdrian/pkmn-romaji/issues"
+  },
+  "homepage": "https://github.com/castdrian/pkmn-romaji#readme",
+  "eslintConfig": {
+    "extends": [
+      "standard-typescript-prettier"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    }
+  },
+  "prettier": "eslint-config-standard-typescript-prettier/prettier",
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.5.5",
+    "undici": "^5.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "eslint-config-standard-typescript-prettier": "^6.0.0"
+  }
+}
