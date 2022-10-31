@@ -6,8 +6,6 @@ const API_URL = 'https://bulbapedia.bulbagarden.net/w/api.php?action=query&prop=
 const NAME_PAGE = 'List_of_Japanese_Pokémon_names';
 const MOVE_PAGE = 'List_of_moves_in_other_languages';
 
-export type { RomajiMon, RomajiMove };
-
 export async function fetchRomaji(options: { mon?: string, move?: string, allMons?: boolean, allMoves?: boolean }): Promise<RomajiMon[]|RomajiMove[]|RomajiMon|RomajiMove|null> {
 	if (options.mon) {
 		return fetchRomajiMon(options.mon);

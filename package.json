@@ -1,6 +1,6 @@
 {
   "name": "pkmn-romaji",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get romaji transliterations of Pokémon names and moves",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
