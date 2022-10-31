@@ -23,5 +23,5 @@
         "baseUrl": "./",
         "typeRoots": ["node_modules/@types", "src/@types"],
     },
-	"include": ["src/**/*.ts", "src/debug.mjs"],
+	"include": ["src/**/*.ts", "src/@types/**/*.d.ts"],
 }
