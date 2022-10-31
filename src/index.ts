@@ -1,5 +1,6 @@
 import { request } from 'undici';
-import type { BulbaMediaWikiAPIResponse, RomajiMon, RomajiMove } from 'src/@types';
+// import types from index.d.ts
+import type { RomajiMon, RomajiMove, BulbaMediaWikiAPIResponse } from './index.d';
 
 const API_URL = 'https://bulbapedia.bulbagarden.net/w/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=';
 const NAME_PAGE = 'List_of_Japanese_Pokémon_names';
